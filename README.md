@@ -1,2 +1,2 @@
 # up210692_cpp
-Repeositorio materia de programacion 
+Repositorio materia de programacion 
