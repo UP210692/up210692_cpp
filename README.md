@@ -2,4 +2,4 @@
 
  Programacion 
 
-![Imagen](/imagenes/47978d856fecb2d408b2d32e57e0dc72.jpg)
+![Imagen](/imagenes/8959bfcb-9083-486d-8575-3b15b3bf6dc1.jpeg)
