@@ -22,9 +22,7 @@ else if (puntuacion >= meritorio){
         cout << "Tu nivel de rendimiento es meritorio \n";
         dinero = 2400*meritorio;
 }
-else cout << "Tu puntuiacion no es aceptable \n";
-
-
-cout << "Tu ganancia es de:\n$" << dinero << " pesos" << endl;
+else cout << "Tu puntuación no es aceptable \n";
+cout << "\nTu ganancia es de:\n$" << dinero << " pesos" << endl;
 return 0;
 }
