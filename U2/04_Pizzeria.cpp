@@ -19,9 +19,11 @@ int main (){
 
     cout << "¿Que ingrediente extra lleva tu pizza?\n";
     cin >> extra;
+    if (extra == 1)
     cout << "Tu pedido final es:\n 1.- Mozzarella\n2.-Tomate\n" << extra <<endl;
     
     
 
     return 0;
 }
+
