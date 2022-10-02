@@ -1,8 +1,7 @@
-# **INSTALL VISUAL STUDIO CODE**
+# **INSTALL VISUAL STUDIO CODE IN LINUX UBUNTU**
 [![visual.webp](https://i.postimg.cc/52J2YfCn/visual.webp)](https://postimg.cc/fJHN1n59)
 
-# *LINUX UBUNTU* 
-[![lin.webp](https://i.postimg.cc/XqFnqPNR/lin.webp)](https://postimg.cc/D429YBX6)
+
 For install visual studio code in linux ubuntu we have to follow the next steps.
 
     1. First we have to enter the web browser and search for visual studio code.
