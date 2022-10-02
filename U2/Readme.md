@@ -10,7 +10,7 @@
 |Entre $35,000 y $60,000| 30% |
 |Mas de $60,000| 45% |
 
-'''c++
+```c++
 
 #include <iostream>
 using namespace std;
@@ -44,5 +44,5 @@ int main() {
     return 0;
 }
     
-'''
+```
 
