@@ -1,14 +1,14 @@
 # EXERCISE 1
 
-### This program shows the corresponding tax according to the annual rent.
+### The next program shows the corresponding tax according to the annual rent.
 
-| RENTA | IMPUESTO |
+| RENT | TAX |
 |-------|----------|
-|Menos de $10,000| 5% |
-|Entre $10,000 y $20,000| 15% |
-|Entre $20,000 y $35,000| 20% |
-|Entre $35,000 y $60,000| 30% |
-|Mas de $60,000| 45% |
+|Less than $10,000| 5% |
+|Between $10,000 and $20,000| 15% |
+|Between $20,000 and $35,000| 20% |
+|Between $35,000 and $60,000| 30% |
+|More than $60,000| 45% |
 
 ```c++
 
@@ -45,4 +45,14 @@ int main() {
 }
     
 ```
+The structure of the code is:
 
+    * First whe have the libraries and main function
+    
+    ![Captura-desde-2022-10-02-17-59-22.png](https://i.postimg.cc/FsLftNQX/Captura-desde-2022-10-02-17-59-22.png)]
+    * Then we declare the variables
+    
+    ![Captura-desde-2022-10-02-18-02-47.png](https://i.postimg.cc/1XZzsNSx/Captura-desde-2022-10-02-18-02-47.png)]
+    * We ask the user for his income and save it in the variable "renta"
+    
+    ![Captura-desde-2022-10-02-18-05-03.png](https://i.postimg.cc/nzp5xHWR/Captura-desde-2022-10-02-18-05-03.png)]
