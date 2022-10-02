@@ -11,6 +11,7 @@
 |Mas de $60,000| 45% |
 
 ///c++
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -42,5 +43,6 @@ int main() {
     cout << "\nTu impositivo es: \n$" << impuesto << " pesos" << endl;
     return 0;
 }
+    
 ///
 
