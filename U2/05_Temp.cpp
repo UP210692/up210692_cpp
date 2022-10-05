@@ -16,6 +16,7 @@ int main(){
     suma = temperatura;
     cout <<"suma"<< temperatura;
     cout <<"El promedio de las temperaturas es:"<<endl;
+
      
 
     
