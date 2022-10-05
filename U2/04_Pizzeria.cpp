@@ -1,41 +1,44 @@
 #include <iostream>
 using namespace std;
 int main (){
-    double ingrediente;
-    char tipo;
+    int ingrediente;
+    int tipo;
     
-cout<<"Bienvenido a la pizzeria Bella Napoli.\nTipos de pizza\n\t1- Vegetariana\n\t2- No vegetariana\n";
-cout << "Introduce el número correspondiente al tipo de pizza que quieres:";
+cout<<"Pizzeria Bella Napoli.\nTipos de pizza\n 1-Vegetariana\n 2-No vegetariana\n";
+cout << "Numero de pizza que desea:\n";
 cin >> tipo;
-if (tipo == '1'){
-    cout <<"Ingredientes de pizzas vegetarianas\n\t 1- Pimiento\n\t2- Tofu\n";
-    cout <<"Introduce el ingrediente que deseas: ";
+if (tipo == 1){
+    //si la pizza es vegetariana
+    cout <<"Pizza vegetarianas:\n 1-Pimiento\n 2-Tofu\n";
+    cout <<"Numero de ingrediente extra que desea:\n";
     cin >> ingrediente;
-}
-    if (ingrediente == '1'){
-        cout <<"Pizza vegetariana con mozzarella, tomate y pimiento"<<endl;
-    }
-    else if (ingrediente = '2'){
-        cout <<"Pizza vegetariana con mozzarella, tomate y tofu"<<endl;
-    }
-    else cout << "Ingrediente no disponible";
-if (tipo == '2') {
-    cout<<"Ingredientes de pizzas no vegetarianas\n\t1- Peperoni\n\t2- Jamón\n\t3- Salmón\n";
-    cout <<"Introduce el ingrediente que deseas: ";
-    cin >> ingrediente;
-    cout <<"Pizza no vegetarina con mozarrella, tomate y " <<ingrediente<<endl;
-}
-    if (ingrediente == '1'){
-        ingrediente = 'peperoni';
-    }
-    else if (ingrediente == '2'){
-        cout<<"jamón";
-    }
-    else cout <<"salmón";
-    
-    
-    
 
+    if (ingrediente == 1){
+        cout <<"Pedido final: \n 1.-Mozzarella\n 2.-Tomate\n 3.-Pimiento"<<endl;
+    }
+    else if (ingrediente == 2){
+        cout <<"Peidio final: \n 1.-Mozzarella\n 2.-Tomate\n 3.-Tofu"<<endl;
+    }
+    else cout << "Ingrediente no disponible\n";
+}
+else if (tipo == 2) {
+    //pizza no vegetariana
+    cout<<"Pizzas no vegetariana;\n 1- Peperoni\n 2- Jamón\n 3- Salmón\n";
+    cout <<"Ingrediente extra que desea: \n";
+    cin >> ingrediente;
+    if (ingrediente == 1){
+        cout << "Pedidio final: \n 1.Mozzarella \n 2.-Tomate \n 3.- Peperoni\n";
+    }
+    else if (ingrediente == 2){
+        cout << "Pedidio final: \n 1.Mozzarella \n 2.-Tomate \n 3.- Jamon\n";
+    }
+    else if (ingrediente == 3){
+        cout <<"Pedidio final: \n 1.-Mozarrella \n 2.-Tomate \n 3.-Salmon\n";
+    }
+    else cout << "Ingrediente no disponible\n";
+}   
+    
+else cout << "Pizza inexistente\n";
     return 0;
 }
 
