@@ -3,19 +3,17 @@ using namespace std;
 
 int main(){
     int contador;
-    float temperatura;
+    float temperatura[i];
     float AcumTemp=0;
     float promedio;
     float suma;    
     do{
-        cout << "Give me the temperature:\n";
+        cout <<i+1<<"Give me the temperature:\n";
         cin >> temperatura;
         AcumTemp+=temperatura;
         contador ++;
     }while(contador < 6);
-    suma = temperatura;
-    cout <<"suma"<< temperatura;
-    cout <<"El promedio de las temperaturas es:"<<endl;
+
 
      
 

@@ -48,11 +48,5 @@ int main() {
 The structure of the code is:
 
     * First whe have the libraries and main function
-    
-    ![Captura-desde-2022-10-02-17-59-22.png](https://i.postimg.cc/FsLftNQX/Captura-desde-2022-10-02-17-59-22.png)]
     * Then we declare the variables
-    
-    ![Captura-desde-2022-10-02-18-02-47.png](https://i.postimg.cc/1XZzsNSx/Captura-desde-2022-10-02-18-02-47.png)]
     * We ask the user for his income and save it in the variable "renta"
-    
-    ![Captura-desde-2022-10-02-18-05-03.png](https://i.postimg.cc/nzp5xHWR/Captura-desde-2022-10-02-18-05-03.png)]
