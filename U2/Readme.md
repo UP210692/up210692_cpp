@@ -65,7 +65,7 @@ int main() {
 <img src="./IMAGENES/1.2.png">
 
 ### Rent more than $60,000
-<img src="./IMAGENES/1.1png"> 
+<img src="./IMAGENES/1.1.png"> 
 
 
 # EXERCISE 2
