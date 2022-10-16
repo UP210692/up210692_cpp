@@ -1,16 +1,23 @@
 #include <iostream>
 using namespace std;
-int main (){
-    char productos;
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float cantidad;
     float precio;
-    int contadorprecio = 1;
-    float Acumproductos = 0;
-    float Acumprecios = 0;
-    int contadorproducto = 1;
-    do()
+    float preciototal;
+     do
     {
-        /* code */
-    } while (/* condition */);
+        cout << "Amount of the product:\n ";
+        cin >> cantidad;
+        cout << "Price of the products:\n ";
+        cin >> precio;
+        preciototal += (precio * cantidad);
     
+    } while (precio != 0 and cantidad > 0);
+    cout << "totalprice:\n"<< preciototal <<endl<< "0"<<endl;
     return 0;
 }
