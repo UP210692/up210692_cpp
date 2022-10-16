@@ -249,18 +249,86 @@ else cout << "Pizza inexistente\n";
 # EXERCISE 5
 
 ### This code shows the mean of 6 temperatures and the temperature highest and more low
-
 ```c++
+#include <iostream>
+using namespace std;
 
+int main(){
+    int contador = 1;
+    float temperatura;
+    float temp1;
+    float AcumTemp=0;
+    float promedio;
+    float suma;
+    int may = INT8_MIN;
+    int men = INT8_MAX; 
+    //float i;   
+    do{
+        cout <<"Give me the temperature:\n";
+        cin >> temperatura; 
+    temp1=temperatura;
+        if (temperatura<men)
+        {
+            men=temperatura;
+        }
+        if (temperatura>men)
+        {
+            may=temperatura;
+        } 
+        suma = suma + temp1;
+        promedio=suma/6;
+        AcumTemp+=temperatura;
+        contador ++;
+    }while(contador <= 6);
+
+    cout << "Promedio:\n"<<promedio<<endl; 
+    cout <<"Suma:\n"<<suma<<endl;
+ 
+   cout << "La temperatura mayor es: \n"<<may <<endl;
+    cout<<"La temperatura menor es: \n"<< men <<endl;
+
+    return 0;
+}
 ```
+
+## CODE TEST
+### The user enter the 6 temperatures
+
 
 # EXERCISE 6 
 
 ### This code shows the total in a facture of the prodects ingresed for the user
 
 ```c++
+//Libraries and main function
+#include <iostream>
+using namespace std;
+int main()
+{
+//Declaret the variables
+    float cantidad;
+    float precio;
+    float preciototal;
+//Cycle for enter the product with their price
+     do
+    {
+        cout << "Amount of the product:\n ";
+        cin >> cantidad;
+        cout << "Price of the products:\n $";
+        cin >> precio;
+        preciototal += (precio * cantidad);
+    
+    } while (precio != 0 and cantidad > 0);
+    cout << "Total Price:\n $"<< preciototal <<endl<< "0"<<endl;
 
+return 0;
+}
 ```
+
+## CODE TEST
+### The user enter 5 products with their respective price
+<img src="./IMAGENES/6.1.png">
+
 # EXERCISE 7
 ### This code do the conversion of the system decimal to binario 
 ```c++

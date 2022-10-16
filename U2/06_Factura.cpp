@@ -13,11 +13,11 @@ int main()
     {
         cout << "Amount of the product:\n ";
         cin >> cantidad;
-        cout << "Price of the products:\n ";
+        cout << "Price of the products:\n $";
         cin >> precio;
         preciototal += (precio * cantidad);
     
     } while (precio != 0 and cantidad > 0);
-    cout << "totalprice:\n"<< preciototal <<endl<< "0"<<endl;
+    cout << "Total Price:\n $"<< preciototal <<endl<< "0"<<endl;
     return 0;
 }

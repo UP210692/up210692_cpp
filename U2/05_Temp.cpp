@@ -8,8 +8,8 @@ int main(){
     float AcumTemp=0;
     float promedio;
     float suma;
-    int may = INT8_MIN;
-    int men = INT8_MAX; 
+    float may = INT8_MIN;
+    float men = INT8_MAX; 
     //float i;   
     do{
         cout <<"Give me the temperature:\n";
@@ -29,10 +29,10 @@ int main(){
         contador ++;
     }while(contador <= 6);
 
-    cout << "Promedio:\n"<<promedio<<endl; 
-    cout <<"Suma:\n"<<suma<<endl;
+    cout <<"Temperatura total:\n"<<suma<<endl;
+    cout << "Promedio de las temperaturas:\n"<<promedio<<endl; 
  
-   cout << "La temperatura mayor es: \n"<<may <<endl;
+    cout << "La temperatura mayor es: \n"<<may <<endl;
     cout<<"La temperatura menor es: \n"<< men <<endl;
 
     return 0;
