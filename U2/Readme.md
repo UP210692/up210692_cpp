@@ -384,6 +384,7 @@ int main (){
 ## CODE TEST
 ### The user 
 <img src="./IMAGENES/8.1.png">
+
 # EXERCISE 9
 ### This code show the bisection method
 
