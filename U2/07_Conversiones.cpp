@@ -1,20 +1,29 @@
 #include <iostream>
 using namespace std;
 int main (){
-    int num;
-    int resultado;
-
-    cout << "Enter the number\n";
-    cin >> num;
-    while (num != 0)
+    int numero;
+    string binario="";
+    cout << "Integer number for conversion: \n";
+    cin >> numero;
+    if (numero>0)
     {
-        if (num%2 == 0)
-        {
-            resultado = '0' + resultado;
+        while(numero>0){
+            if(numero%2==0){
+                binario = "0"+binario;
+            }
+            else {
+                binario = "1"+binario;
+            }
+            numero = numero/2;
         }
-        
     }
-    cout << "Resultado: \n" << resultado << endl;
+    else if (numero == 0){
+            binario = "0";
+        }
+        else {
+            binario = "This number cannot convert";
+        }
     
-    
+    cout << "The result of the convertion is: \n"<< binario<<endl;
+    return 0;
 }

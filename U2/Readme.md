@@ -294,8 +294,45 @@ return 0;
 # EXERCISE 7
 ### This code do the conversion of the system decimal to binario 
 ```c++
-
+//Libraries and main function
+#include <iostream>
+using namespace std;
+int main (){
+//Declaret the variables
+    int numero;
+    string binario="";
+    cout << "Integer number for conversion: \n";
+    cin >> numero;
+//First cycle when the division is more than 0
+    if (numero>0)
+    {
+        while(numero>0){
+            if(numero%2==0){
+                binario = "0"+binario;
+            }
+            else {
+                binario = "1"+binario;
+            }
+            numero = numero/2;
+        }
+    }
+//Second cycle when the division is equal to 0
+    else if (numero == 0){
+            binario = "0";
+        }
+        else {
+            binario = "This number cannot convert";
+        }
+    
+    cout << "The result of the convertion is: \n"<< binario<<endl;
+    return 0;
+}
 ```
+
+### CODE TEST
+### The user enter the number 34
+<img src= "./IMAGENES/7.1.png">
+
 # EXERCISE 8
 ### This code show the multiplication table of the number the user ingresed
 
