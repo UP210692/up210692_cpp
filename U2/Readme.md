@@ -329,7 +329,7 @@ int main (){
 }
 ```
 
-### CODE TEST
+## CODE TEST
 ### The user enter the number 34
 <img src= "./IMAGENES/7.1.png">
 
@@ -339,3 +339,15 @@ int main (){
 ```c++
 
 ```
+## CODE TEST
+### The user 
+<img src="./IMAGENES/8.1.png">
+# EXERCISE 9
+### This code show the bisection method
+
+```c++
+
+```
+## CODE TEST
+### The user
+<img src="./IMAGENES/9.1.png">
