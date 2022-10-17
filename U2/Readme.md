@@ -250,10 +250,11 @@ else cout << "Pizza inexistente\n";
 
 ### This code shows the mean of 6 temperatures and the temperature highest and more low
 ```c++
+//Libraries and main function
 #include <iostream>
 using namespace std;
-
 int main(){
+//Declaret the variables
     int contador = 1;
     float temperatura;
     float temp1;
@@ -262,10 +263,11 @@ int main(){
     float suma;
     float may = INT8_MIN;
     float men = INT8_MAX; 
-    //float i;   
+    float i;   
     do{
         cout <<"Give me the temperature:\n";
         cin >> temperatura; 
+//Cycle for comparate the temperatures to determinate the higest and lower
     temp1=temperatura;
         if (temperatura<men)
         {
@@ -275,6 +277,7 @@ int main(){
         {
             may=temperatura;
         } 
+//Calculate the mean of the temperatures
         suma = suma + temp1;
         promedio=suma/6;
         AcumTemp+=temperatura;
@@ -294,7 +297,7 @@ int main(){
 ## CODE TEST
 ### The user enter the 6 temperatures
 
-<img src="./IMAGENES/5.1.png>
+<img src="./IMAGENES/5.1.png">
 
 # EXERCISE 6 
 
