@@ -8,13 +8,17 @@ int main()
     int numero;
     int lim;
  
-    cout <<"Introduzca un numero entero:";
-    cin >> %d & numero;
-    cout << "Limite de la tabla";
+    cout <<"Enter an integer number:\n";
+    cin >> numero;
+    cout << "Table limit:\n";
     cin >> lim;
-    printf("\n  La tabla de multiplicar del %d es:\n", numero);
+    cout <<"The multiplication table of " <<numero<< " is:\n"<<endl;
     for ( i = 1 ; i <= lim ; i++ ) {
-        printf("\n  %d * %d = %d", i, numero, i*numero);
+        cout << "\n|"<<i<<"\t x \t"<< numero<<"\t=\t"<<(i * numero)<<"\t |\n";
+        for (int f=0; f<=41;f++){
+            cout << "-";
+        }
+        cout << "\n";
     }
     return 0;
 }
