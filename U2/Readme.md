@@ -379,10 +379,35 @@ int main (){
 ### This code show the multiplication table of the number the user ingresed
 
 ```c++
-
+//Libraries and main function
+#include <iostream>
+using namespace std;
+#include <stdio.h>
+int main()
+{
+//Declaret the variables
+    int i;
+    int numero;
+    int lim;
+//Input of the number
+    cout <<"Enter an integer number:\n";
+    cin >> numero;
+    cout << "Table limit:\n";
+    cin >> lim;
+    cout <<"The multiplication table of " <<numero<< " is:\n"<<endl;
+//Cycle for calculete the table and give it formate 
+    for ( i = 1 ; i <= lim ; i++ ) {
+        cout << "\n|"<<i<<"\t x \t"<< numero<<"\t=\t"<<(i * numero)<<"\t |\n";
+        for (int f=0; f<=41;f++){
+            cout << "-";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
 ```
 ## CODE TEST
-### The user 
+### The user enter the number 5 with a 10 as limit
 <img src="./IMAGENES/8.1.png">
 
 # EXERCISE 9
