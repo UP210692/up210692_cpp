@@ -407,7 +407,7 @@ int main()
 }
 ```
 ## CODE TEST
-### The user enter the number 5 with a 10 as limit
+### The user enter the number 5 with a 10 as limit 
 <img src="./IMAGENES/8.1.png">
 
 # EXERCISE 9
