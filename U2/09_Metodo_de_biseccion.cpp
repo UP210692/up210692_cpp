@@ -4,7 +4,7 @@ using namespace std;
 
 float ecuacion(float numero)
 {
-    return (pow(numero, 2)-numero-6);
+    return (pow(numero, 2)-numero-12);
 }
 
 int main (){
@@ -20,6 +20,19 @@ int main (){
     yb = ecuacion(b);
     yc = ecuacion(c); 
     cout<< "c="<<c<<endl;
-    cout << "ya="<<yb<<endl; 
+    cout << "ya= "<<yb<<"yb= "<<yb<<endl<<"yc= "<<yb<<endl; 
+do
+    {   
+
+        if(ya*yc<0)
+        b=c;
+        else if(yc*yb<0)
+        a=c;
+        else cout<<"No exist";
+        break;
+    }
+    while(yc>=-0.01 || yc<=0.01);
+cout << "b= "<<c<<endl;
+
     return 0;
 }
