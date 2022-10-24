@@ -414,11 +414,12 @@ int main()
 ### This code show the bisection method
 
 ```c++
+//Libraries
 #include <iostream>
 #include <cmath>
 #include <iomanip>
 using namespace std;
-// Solve the equation
+// Variable to solve the equation
 float resolverEcuacion(float numero)
 {
     return (pow(numero, 2) - numero - 12);
