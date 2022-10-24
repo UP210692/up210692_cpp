@@ -486,8 +486,6 @@ int main()
 }
 ```
 ## CODE TEST
-
-<img src="./IMAGENES/9.1.png">
 <img src="./IMAGENES/9.2.png">
 <img src="./IMAGENES/9.3.png">
 <img src="./IMAGENES/9.4.png">
