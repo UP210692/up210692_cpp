@@ -1,9 +1,10 @@
+//Libraries
 #include <iostream>
 #include <cmath>
 #include <iomanip>
 using namespace std;
 // Solve the equation
-float resolverEcuacion(float numero)
+float Ecuacion(float numero)
 {
     return (pow(numero, 2) - numero - 12);
 }
@@ -20,7 +21,7 @@ int imprimirlinea()
 int main()
 {
     int interador = 1;
-    int solucion = 1;
+    int resultado = 1;
     float margen_error = 0.00001;
     float a, b, c, ya, yb, yc;
 
@@ -36,9 +37,9 @@ int main()
     do
     {
         c = (a + b) / 2;
-        ya = resolverEcuacion(a);
-        yb = resolverEcuacion(b);
-        yc = resolverEcuacion(c);
+        ya = Ecuacion(a);
+        yb = Ecuacion(b);
+        yc = Ecuacion(c);
         // Print the results in a table
         cout << "| " << interador << "\t\t| " << fixed << setprecision(8) << a << "\t\t| " << b << "\t\t| " << c << "\t\t| " << ya << "\t\t| " << yb << "\t\t| " << yc << "\t\t| \n";
         imprimirlinea();
@@ -50,14 +51,14 @@ int main()
             a=c;
         }
         if (a==b){
-            solucion = 0;
+            resultado = 0;
             break;
         }
         interador++;
     } while ( abs(yc)>= margen_error);
 
     // Print the root 
-    if (solucion != 0)
+    if (resultado != 0)
     {
         cout << "The root is:\n" << c<< endl;
     }
