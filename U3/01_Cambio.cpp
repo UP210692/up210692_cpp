@@ -1,21 +1,25 @@
-# EXCERSISE 1
-### This code show the exchange of money into bills and coins
+/*
+Autor: Adriana Marlene Silva Lopez
+Fecha: 24/Octubre/2022
+Description: Este programa muestra el cambio desglosado en billetes y monedas 
+*/
 
-```c++
-//Libraries
 #include <iostream>
 using namespace std;
-//Inisialitation of the variables
+/* viod obtenercambio (int);
+void obtenermomedas (int);
+void imprimircambio(string);
+*/
 int quinientos = 0, dosientos = 0, cien = 0;
 int cincuenta = 0, veinte = 0;
 int diez = 0, cinco = 0, dos = 0, uno = 0;
-//Main function
+
 int main(){
 int dinero;
 int residuo;
 cout << "Cantidad de dinero \n"<<"$";
 cin >> dinero;
-//Calculate of the change
+
 quinientos = dinero/500;
 residuo = dinero%500;
 cout <<"Billetes de quinientos:\n" << quinientos << endl;
@@ -43,11 +47,11 @@ cout << "Monedas de dos:\n"<<dos<<endl;
 uno = residuo/1;
 residuo = residuo%1;
 cout << "Monedas de peso:\n"<<uno<<endl;
+/*obtenercambio (dinero)
+imrimpircambio ("total")
 
+obtenermoneda (dinero)
+imprimircambio("monedas")
+*/
 return 0;
 }
-```
-## CODE TEST
-###The user ingresed the mount of 2978
-
-<img src="./IMAGENES/3.1.png">
