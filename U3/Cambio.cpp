@@ -17,7 +17,7 @@ int diez = 0, cinco = 0, dos = 0, uno = 0;
 int main(){
 int dinero;
 int residuo;
-cout << "Cantidad de dinero \n";
+cout << "Cantidad de dinero \n"<<"$";
 cin >> dinero;
 
 quinientos = dinero/500;
