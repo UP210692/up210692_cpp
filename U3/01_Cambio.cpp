@@ -58,22 +58,22 @@ void obtenercambio(int dinero)
 }
 void imprimircambio()
 {
-    cout << "Billetes de quinientos:\n"
+    cout << "Five hundred bills:\n"
          << quinientos << endl;
-    cout << "Billetes de doscientos:\n"
+    cout << "Two hundred bills:\n"
          << doscientos << endl;
-    cout << "Billetes de cien:\n"
+    cout << "One hundred bills:\n"
          << cien << endl;
-    cout << "Billetes de cincuenta:\n"
+    cout << "Fifty bills:\n"
          << cincuenta << endl;
-    cout << "Billetes de veinte:\n"
+    cout << "Twenty bills:\n"
          << veinte << endl;
-    cout << "Monedas de diez:\n"
+    cout << "Ten coins:\n"
          << diez << endl;
-    cout << "Monedas de cinco:\n"
+    cout << "Five coins:\n"
          << cinco << endl;
-    cout << "Monedas de dos:\n"
+    cout << "Two coins:\n"
          << dos << endl;
-    cout << "Monedas de peso:\n"
+    cout << "One coins:\n"
          << uno << endl;
 }

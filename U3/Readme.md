@@ -5,46 +5,78 @@
 //Libraries
 #include <iostream>
 using namespace std;
-//Inisialitation of the variables
-int quinientos = 0, dosientos = 0, cien = 0;
+//Variable initialization
+int quinientos = 0, doscientos = 0, cien = 0;
 int cincuenta = 0, veinte = 0;
 int diez = 0, cinco = 0, dos = 0, uno = 0;
-//Main function
-int main(){
-int dinero;
 int residuo;
-cout << "Cantidad de dinero \n"<<"$";
-cin >> dinero;
-//Calculate of the change
-quinientos = dinero/500;
-residuo = dinero%500;
-cout <<"Billetes de quinientos:\n" << quinientos << endl;
-dosientos = residuo/200;
-residuo = residuo%200;
-cout << "Billetes de doscientos:\n"<<dosientos<<endl;
-cien = residuo/100;
-residuo = residuo%100;
-cout << "Billetes de cien:\n"<<cien<<endl;
-cincuenta = residuo/50;
-residuo = residuo%50;
-cout << "Billetes de cincuenta:\n"<<cincuenta<<endl;
-veinte = residuo/20;
-residuo = residuo%20;
-cout << "Billetes de veinte:\n"<<veinte<<endl;
-diez = residuo/10;
-residuo = residuo%10;
-cout << "Monedas de diez:\n"<<diez<<endl;
-cinco = residuo/5;
-residuo = residuo%5;
-cout << "MOnedas de cinco:\n"<<cinco<<endl;
-dos = residuo/2;
-residuo = residuo%2;
-cout << "Monedas de dos:\n"<<dos<<endl;
-uno = residuo/1;
-residuo = residuo%1;
-cout << "Monedas de peso:\n"<<uno<<endl;
 
-return 0;
+
+void obtenermoneda(int);
+void obtenercambio(int);
+void imprimircambio();
+//Main function
+int main()
+{
+    int dinero;
+    cout << "Amount of money\n"<< "$";
+    cin >> dinero;
+
+    obtenercambio(dinero); 
+    imprimircambio();
+
+
+    return 0;
+}
+//Calculate coins
+void obtenermoneda(int dinero)
+{
+    diez = residuo / 10;
+    residuo = residuo % 10;
+    cinco = residuo / 5;
+    residuo = residuo % 5;
+    dos = residuo / 2;
+    residuo = residuo % 2;
+    uno = residuo / 1;
+    residuo = residuo % 1;
+}
+//Calculate banknotes
+void obtenercambio(int dinero)
+{
+    quinientos = dinero / 500;
+    residuo = dinero % 500;
+    doscientos = residuo / 200;
+    residuo = residuo % 200;
+    cien = residuo / 100;
+    residuo = residuo % 100;
+    cincuenta = residuo / 50;
+    residuo = residuo % 50;
+    veinte = residuo / 20;
+    residuo = residuo % 20;
+
+    obtenermoneda(residuo);
+}
+//Imprent of the change
+void imprimircambio()
+{
+    cout << "Five hundred bills:\n"
+         << quinientos << endl;
+    cout << "Two hundred bills:\n"
+         << doscientos << endl;
+    cout << "One hundred bills:\n"
+         << cien << endl;
+    cout << "Fifty bills:\n"
+         << cincuenta << endl;
+    cout << "Twenty bills:\n"
+         << veinte << endl;
+    cout << "Ten coins:\n"
+         << diez << endl;
+    cout << "Five coins:\n"
+         << cinco << endl;
+    cout << "Two coins:\n"
+         << dos << endl;
+    cout << "One coins:\n"
+         << uno << endl;
 }
 ```
 ## CODE TEST
