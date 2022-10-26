@@ -20,8 +20,7 @@ void imprimircambio();
 int main()
 {
     int dinero;
-    cout << "Cantidad de dinero \n"
-             << "$";
+    cout << "Cantidad de dinero \n"<< "$";
     cin >> dinero;
 
     obtenercambio(dinero); 
