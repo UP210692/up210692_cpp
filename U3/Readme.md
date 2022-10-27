@@ -80,6 +80,6 @@ void imprimircambio()
 }
 ```
 ## CODE TEST
-###The user ingresed the mount of 2978
+### The user ingresed the mount of 2978
 
 <img src="./IMAGENES/3.1.png">
