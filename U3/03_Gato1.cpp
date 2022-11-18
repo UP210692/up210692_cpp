@@ -53,27 +53,29 @@ int main()
             setGame(game);
             system("clear");
             printPlayMatrix();
-        if(playerwinner = 1)
+        /*
+        if(playerwinner == 1)
         {
             cout << "Gandor x";
         }
-        else if (playerwinner = 2)
+        else if (playerwinner == 2)
         {
             cout << "Gandor o";
         }
-        else if (playerwinner = 3)
+        else if (playerwinner == 3)
         {
             cout << "Tie";
         }
             playerturn++; // sigue el otro
         }
+        */
     }
-  /*
+  
     if (winner == true)
     cout << "Ganaste";
     else 
     cout << "Empate";
-    */
+
 
     /*
         while(turn < 9 && winner = false){
@@ -248,19 +250,6 @@ void colocarJugadaImaginaria(int game){
 }
 */ 
 
-/*
-//var esGanador; 
-if(areaJuego[0][0] != ' ' & areaJuego[0][1] == areaJuego[0][0] & areaJuego[0][2] == areaJuego[0][0]
-    || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[1][0] & areaJuego[1][2] == areaJuego[1][0]
-        || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]
-        
-            || areaJuego[0][0] != ' ' & areaJuego[1][0] == areaJuego[0][0] & areaJuego[2][0] == areaJuego[0][0]
-                || areaJuego[1][0] != ' ' & areaJuego[1][1] == areaJuego[0][1] & areaJuego[2][1] == areaJuego[0][1]
-                    || areaJuego[2][0] != ' ' & areaJuego[2][1] == areaJuego[2][0] & areaJuego[2][2] == areaJuego[2][0]){
-    esGanador = true; 
-}
-*/
-
 void printPlayMatrix(){
     for (int row = 0; row < 3; row++)
     {
@@ -274,7 +263,7 @@ void printPlayMatrix(){
     
 }
 
-
+/*
 void reviewWinner() {
      while (playerturn < 9 && winner == false)
     {
@@ -293,7 +282,7 @@ void reviewWinner() {
             playerturn++; // sigue el otro
         }
     }
-    if (1!=1){
+    if (playerwinner != 1){
         if(
             gamearea[0][0] == 'X' && gamearea[0][1] == 'X' && gamearea[0][2] == 'X' ||
             gamearea[1][0] == 'X' && gamearea[1][1] == 'X' && gamearea[1][2] == 'X' ||
@@ -307,9 +296,8 @@ void reviewWinner() {
         {
         winner = true;
         playerwinner = 1;
-        cout << "1";
         }
-    else if(
+        if(
             gamearea[0][0] == 'o' && gamearea[0][1] == '0' && gamearea[0][2] == 'X' ||
             gamearea[1][0] == 'o' && gamearea[1][1] == '0' && gamearea[1][2] == 'X' ||
             gamearea[2][0] == 'o' && gamearea[2][1] == '0' && gamearea[2][2] == 'X' ||
@@ -322,13 +310,44 @@ void reviewWinner() {
     {
         winner  = true;
         playerwinner = 2;
-        cout << "2";
     }
     else {
         playerwinner = 3;
-        cout << "3";
-    }
-
+        }
     }
 }
+*/
 
+void reviewWinner(){
+
+    if(winner != 1){
+    if(gamearea[0][0] != 'x' && gamearea[0][1] == gamearea[0][0] && gamearea[0][2] == gamearea[0][0]
+        || gamearea[1][0] != 'x' && gamearea[1][1] == gamearea[1][0] && gamearea[1][2] == gamearea[1][0]
+            || gamearea[2][0] != 'x' && gamearea[2][1] == gamearea[2][0] && gamearea[2][2] == gamearea[2][0]
+
+                || gamearea[0][0] != 'x' && gamearea[1][0] == gamearea[0][0] && gamearea[2][0] == gamearea[0][0]
+                    || gamearea[0][1] != 'x' && gamearea[1][1] == gamearea[0][1] && gamearea[2][1] == gamearea[0][1]
+                        || gamearea[0][2] != 'x' && gamearea[2][1] == gamearea[0][2] && gamearea[2][2] == gamearea[0][2]
+                            
+                            || gamearea[0][0] != 'x' && gamearea[1][1] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                                || gamearea[0][2] != 'x' && gamearea[1][1] == gamearea[0][2] && gamearea[2][1] == gamearea[0][2])
+    {
+        winner = true;
+        //playerwinner = 1;
+    }
+    if(gamearea[0][0] != 'o' && gamearea[0][1] == gamearea[0][0] && gamearea[0][2] == gamearea[0][0]
+        || gamearea[1][0] != 'o' && gamearea[1][1] == gamearea[1][0] && gamearea[1][2] == gamearea[1][0]
+            || gamearea[2][0] != 'o' && gamearea[2][1] == gamearea[2][0] && gamearea[2][2] == gamearea[2][0]
+
+                || gamearea[0][0] != 'o' && gamearea[1][0] == gamearea[0][0] && gamearea[2][0] == gamearea[0][0]
+                    || gamearea[0][1] != 'o' && gamearea[1][1] == gamearea[0][1] && gamearea[2][1] == gamearea[0][1]
+                        || gamearea[0][2] != 'o' && gamearea[2][1] == gamearea[0][2] && gamearea[2][2] == gamearea[0][2]
+                            
+                            || gamearea[0][0] != 'o' && gamearea[1][1] == gamearea[0][0] && gamearea[2][2] == gamearea[0][0]
+                                || gamearea[0][2] != 'o' && gamearea[1][1] == gamearea[0][2] && gamearea[2][1] == gamearea[0][2])
+    {
+        winner = true;
+        //playerwinner = 2;
+    }
+    }
+}
