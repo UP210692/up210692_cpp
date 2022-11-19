@@ -12,7 +12,7 @@ void printPlayMatrix();
 //void estructuraGato(); 
 //void requestMove(); //pedirJugada
 //void reviewPlay(); //revisarJugada
-void reviewWinner(); //revisarGanador
+bool reviewWinner(); //revisarGanador
 int getGame(); //obtenerJugada //jugada tablero real 
 int getBestGame(); //obtenerMejorJugada //jugada tablero imaginario 
 
@@ -98,7 +98,8 @@ int main()
     return 0;
 }
 
-void setGame(int game){
+void setGame(int game) {
+
     char moveValue; //valorJugada
 
     if(playerturn%2==0){ //Parees
@@ -263,26 +264,7 @@ void printPlayMatrix(){
     
 }
 
-/*
-void reviewWinner() {
-     while (playerturn < 9 && winner == false)
-    {
-        system("clear"); // limpio
-        do
-        {
-            game = selectGame();
-            cout << game << endl;
-            boxBusy = checkBusySlot(game);
-        } while (boxBusy == true);
-        if (boxBusy == false)
-        { // esta libre
-            setGame(game);
-            system("clear");
-            printPlayMatrix();
-            playerturn++; // sigue el otro
-        }
-    }
-    if (playerwinner != 1){
+bool reviewWinner() {
         if(
             gamearea[0][0] == 'X' && gamearea[0][1] == 'X' && gamearea[0][2] == 'X' ||
             gamearea[1][0] == 'X' && gamearea[1][1] == 'X' && gamearea[1][2] == 'X' ||
@@ -295,7 +277,6 @@ void reviewWinner() {
         )
         {
         winner = true;
-        playerwinner = 1;
         }
         if(
             gamearea[0][0] == 'o' && gamearea[0][1] == '0' && gamearea[0][2] == 'X' ||
@@ -309,15 +290,14 @@ void reviewWinner() {
     )
     {
         winner  = true;
-        playerwinner = 2;
     }
     else {
-        playerwinner = 3;
+        winner = true;
         }
     }
+    return winner;
 }
-*/
-
+/*
 void reviewWinner(){
 
     if(winner != 1){
@@ -351,3 +331,4 @@ void reviewWinner(){
     }
     }
 }
+*/
