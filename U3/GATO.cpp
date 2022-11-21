@@ -1,8 +1,20 @@
 #include <iostream>
 using namespace std;
-char gamearea[8][8];
-for (int row = 0; row < 8; row++)
-{
-    
+
+void tablero();
+
+
+int main (){
+    tablero();
+    return 0;
+}
+
+void tablero(){
+    for (int i = 0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+        cout<<"_|"
+        }
+        cout << endl;
+    }
 }
 
