@@ -183,6 +183,17 @@ bool checkBusySlot(int game){
     }else{
         return false; 
     }
+      col = 1; 
+    }else if(game == 9)
+    {
+        row = 2;
+        col = 2; 
+    }
+    if(gamearea[row][col] == 'x' || gamearea[row][col] == 'o')
+    {
+        return true;
+    }else{
+        return false; 
 
 }
 
@@ -263,7 +274,7 @@ void printPlayMatrix(){
     }
     
 }
-
+/*
 bool reviewWinner() {
         if(
             gamearea[0][0] == 'X' && gamearea[0][1] == 'X' && gamearea[0][2] == 'X' ||
@@ -297,6 +308,7 @@ bool reviewWinner() {
     }
     return winner;
 }
+*/
 /*
 void reviewWinner(){
 
