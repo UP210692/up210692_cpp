@@ -14,4 +14,4 @@ This is a game for two players and to play against CPU too. But in this code onl
 
 * [Tests](https://github.com/UP210692/up210692_cpp/blob/main/U3/test.md)
 
-* [Conclusion](https://github.com/UP210692/up210692_cpp/blob/main/U3/conclution.md)
+* [Conclution](https://github.com/UP210692/up210692_cpp/blob/main/U3/conclution.md)
