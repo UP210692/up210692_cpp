@@ -7,6 +7,7 @@ The current program is a representation of "Tic Tac Toe", a game in which two pl
 This is a game for two players and to play against CPU too. But in this code only can play two player vs player.
 
 ## CONTENT
+* [View Code](https://github.com/UP210692/up210692_cpp/blob/main/U3/03_GATO.cpp)
 
 * [Instructions for execution and use](https://github.com/UP210692/up210692_cpp/blob/main/U3/Instructions.md)
 
