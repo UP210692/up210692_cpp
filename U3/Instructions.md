@@ -9,8 +9,8 @@
 
 * $ sudo apt-get install build-essential manpages-dev
 3. To compile this program, type:
-* gcc 04_Gato.c -o 04_Gato
+* gcc 03_Gato.c -o 03_Gato
 4. To run this program, type:
-* ./04_Gato
+* ./03_Gato
 
 [Return to index](https://github.com/UP210692/up210692_cpp/blob/main/U3/Readme.md)
