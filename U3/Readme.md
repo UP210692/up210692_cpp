@@ -9,7 +9,7 @@ This is a game for two players and to play against CPU too. But in this code onl
 ## CONTENT
 * [View Code](https://github.com/UP210692/up210692_cpp/blob/main/U3/code.md)
 
-* [Instructions for execution and use](https://github.com/UP210692/up210692_cpp/blob/main/U3/Instructions.md)
+* [Instructions for execution and edit](https://github.com/UP210692/up210692_cpp/blob/main/U3/Instructions.md)
 
 * [Flowchart](https://github.com/UP210692/up210692_cpp/blob/main/U3/Flowchart.md)
 
