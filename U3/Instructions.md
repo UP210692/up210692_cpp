@@ -1,7 +1,5 @@
 # INSTRUCTION FOR EDIT
 
-### LINUX
-
 1. Download or clone my repo with the following command in the terminal:
 * https://github.com/UP210692/up210692_cpp.git
 2. In this repo you see the program in the unit 3 the document with the name 03_GATO.CPP
