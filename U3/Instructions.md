@@ -16,18 +16,15 @@
 
 PREPROCESOR DIRECTIVES
 
-<img src = "./IMAGENES/9.png
-">
+<img src = "./IMAGENES/9.png">
 
 PROTOTYPE FUNCTIONS AND VARIABLE DECLARATIONS
 
 <img src = "./IMAGENES/11.png">
-">
 
 MAIN FUNCTION
 
 <img src = "./IMAGENES/12.png">
-">
 
 
 
