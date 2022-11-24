@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 char board [3][3] = {{'1','2','3'},

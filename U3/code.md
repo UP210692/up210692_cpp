@@ -1,7 +1,6 @@
 ```c++
 #include <iostream>
 #include <stdlib.h>
-#include <ctime>
 using namespace std;
 
 char board [3][3] = {{'1','2','3'},
@@ -26,7 +25,7 @@ int main (){
     cout<<"Player 2 name:\n";
     cin >> player2;
     drawBoard();
-
+    system("clear");
     game();
     
     return 0;
@@ -112,10 +111,10 @@ void game(){
 
     player = 1;
     current_marker = marker_player;
-
     drawBoard();
+    system ("clear");
     for (int i=0; i<9; i++)
-    {
+    {   
         cout <<"It's a player "<<player<<"'s turn. Enter your slot:\n";
         cin>> slot;
         if (slot < 1 || slot > 9 ){
@@ -128,6 +127,8 @@ void game(){
             i--;
             continue;
         }
+        system ("clear");
+        cout << "*************** TIC-TAC-TOE *************** \n";
         drawBoard();
         player_won = winner();
         if (player_won == 1){
